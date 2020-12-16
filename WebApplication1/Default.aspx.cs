@@ -33,7 +33,7 @@ namespace WebApplication1
             g = client.GetInfo();
             DataTable dt = new DataTable();
             dt = g.usertab;
-            GridView1.DataSource = dt;
+             GridView1.DataSource = dt;
             GridView1.DataBind();
         }
 

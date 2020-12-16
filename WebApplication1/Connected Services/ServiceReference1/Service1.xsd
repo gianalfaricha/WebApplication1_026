@@ -25,18 +25,18 @@
     </xs:sequence>
   </xs:complexType>
   <xs:element name="gettestdata" nillable="true" type="tns:gettestdata" />
-  <xs:complexType name="InsertUser.UpdateUser">
+  <xs:complexType name="UpdateUser">
     <xs:sequence>
       <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="UID" type="xs:int" />
     </xs:sequence>
   </xs:complexType>
-  <xs:element name="InsertUser.UpdateUser" nillable="true" type="tns:InsertUser.UpdateUser" />
-  <xs:complexType name="InsertUser.DeleteUser">
+  <xs:element name="UpdateUser" nillable="true" type="tns:UpdateUser" />
+  <xs:complexType name="DeleteUser">
     <xs:sequence>
       <xs:element minOccurs="0" name="UID" type="xs:int" />
     </xs:sequence>
   </xs:complexType>
-  <xs:element name="InsertUser.DeleteUser" nillable="true" type="tns:InsertUser.DeleteUser" />
+  <xs:element name="DeleteUser" nillable="true" type="tns:DeleteUser" />
 </xs:schema>

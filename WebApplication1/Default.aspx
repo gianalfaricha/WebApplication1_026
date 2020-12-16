@@ -12,6 +12,8 @@
          <asp:Label ID="Label4" runat="server" Text=" "></asp:Label>
        <asp:Label ID="Label5" runat="server" Text="UserID"></asp:Label>
 &nbsp;<asp:TextBox ID="txtuid" runat="server"></asp:TextBox>
+         &nbsp;&nbsp;
+       <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="Search" />
          <br />
          
        <asp:Label ID="Label2" runat="server" Text="Name"></asp:Label>
@@ -24,10 +26,8 @@
        <br />
        <br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Button" />
-       &nbsp;&nbsp;
-       <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="Search" />
-&nbsp;&nbsp;
+<asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Insert" />
+       &nbsp;
        <asp:Button ID="Button3" runat="server" OnClick="Button3_Click" Text="Update" />
 &nbsp;&nbsp;
        <asp:Button ID="Button4" runat="server" OnClick="Button4_Click" Text="Delete" />
@@ -35,7 +35,7 @@
        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
        <asp:Label ID="lblmsg" runat="server" Font-Bold="True" ForeColor="#003300" Text="Label"></asp:Label>
        <br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
        <asp:GridView ID="GridView1" runat="server">
        </asp:GridView>
        <br />

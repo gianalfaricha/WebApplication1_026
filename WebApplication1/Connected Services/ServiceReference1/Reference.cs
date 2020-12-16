@@ -72,126 +72,6 @@ namespace WebApplication1.ServiceReference1 {
                 propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
             }
         }
-        
-        [System.Diagnostics.DebuggerStepThroughAttribute()]
-        [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-        [System.Runtime.Serialization.DataContractAttribute(Name="InsertUser.UpdateUser", Namespace="http://schemas.datacontract.org/2004/07/WcfService1")]
-        [System.SerializableAttribute()]
-        public partial class UpdateUser : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
-            
-            [System.NonSerializedAttribute()]
-            private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
-            
-            [System.Runtime.Serialization.OptionalFieldAttribute()]
-            private string EmailField;
-            
-            [System.Runtime.Serialization.OptionalFieldAttribute()]
-            private string NameField;
-            
-            [System.Runtime.Serialization.OptionalFieldAttribute()]
-            private int UIDField;
-            
-            public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
-                get {
-                    return this.extensionDataField;
-                }
-                set {
-                    this.extensionDataField = value;
-                }
-            }
-            
-            [System.Runtime.Serialization.DataMemberAttribute()]
-            public string Email {
-                get {
-                    return this.EmailField;
-                }
-                set {
-                    if ((object.ReferenceEquals(this.EmailField, value) != true)) {
-                        this.EmailField = value;
-                        this.RaisePropertyChanged("Email");
-                    }
-                }
-            }
-            
-            [System.Runtime.Serialization.DataMemberAttribute()]
-            public string Name {
-                get {
-                    return this.NameField;
-                }
-                set {
-                    if ((object.ReferenceEquals(this.NameField, value) != true)) {
-                        this.NameField = value;
-                        this.RaisePropertyChanged("Name");
-                    }
-                }
-            }
-            
-            [System.Runtime.Serialization.DataMemberAttribute()]
-            public int UID {
-                get {
-                    return this.UIDField;
-                }
-                set {
-                    if ((this.UIDField.Equals(value) != true)) {
-                        this.UIDField = value;
-                        this.RaisePropertyChanged("UID");
-                    }
-                }
-            }
-            
-            public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-            
-            protected void RaisePropertyChanged(string propertyName) {
-                System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-                if ((propertyChanged != null)) {
-                    propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-                }
-            }
-        }
-        
-        [System.Diagnostics.DebuggerStepThroughAttribute()]
-        [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-        [System.Runtime.Serialization.DataContractAttribute(Name="InsertUser.DeleteUser", Namespace="http://schemas.datacontract.org/2004/07/WcfService1")]
-        [System.SerializableAttribute()]
-        public partial class DeleteUser : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
-            
-            [System.NonSerializedAttribute()]
-            private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
-            
-            [System.Runtime.Serialization.OptionalFieldAttribute()]
-            private int UIDField;
-            
-            public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
-                get {
-                    return this.extensionDataField;
-                }
-                set {
-                    this.extensionDataField = value;
-                }
-            }
-            
-            [System.Runtime.Serialization.DataMemberAttribute()]
-            public int UID {
-                get {
-                    return this.UIDField;
-                }
-                set {
-                    if ((this.UIDField.Equals(value) != true)) {
-                        this.UIDField = value;
-                        this.RaisePropertyChanged("UID");
-                    }
-                }
-            }
-            
-            public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-            
-            protected void RaisePropertyChanged(string propertyName) {
-                System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-                if ((propertyChanged != null)) {
-                    propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-                }
-            }
-        }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -239,6 +119,128 @@ namespace WebApplication1.ServiceReference1 {
         }
     }
     
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="UpdateUser", Namespace="http://schemas.datacontract.org/2004/07/WcfService1")]
+    [System.SerializableAttribute()]
+    public partial class UpdateUser : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string EmailField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string NameField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int UIDField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Email {
+            get {
+                return this.EmailField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.EmailField, value) != true)) {
+                    this.EmailField = value;
+                    this.RaisePropertyChanged("Email");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Name {
+            get {
+                return this.NameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.NameField, value) != true)) {
+                    this.NameField = value;
+                    this.RaisePropertyChanged("Name");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int UID {
+            get {
+                return this.UIDField;
+            }
+            set {
+                if ((this.UIDField.Equals(value) != true)) {
+                    this.UIDField = value;
+                    this.RaisePropertyChanged("UID");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="DeleteUser", Namespace="http://schemas.datacontract.org/2004/07/WcfService1")]
+    [System.SerializableAttribute()]
+    public partial class DeleteUser : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int UIDField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int UID {
+            get {
+                return this.UIDField;
+            }
+            set {
+                if ((this.UIDField.Equals(value) != true)) {
+                    this.UIDField = value;
+                    this.RaisePropertyChanged("UID");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ServiceModel.ServiceContractAttribute(ConfigurationName="ServiceReference1.IService1")]
     public interface IService1 {
@@ -256,16 +258,16 @@ namespace WebApplication1.ServiceReference1 {
         System.Threading.Tasks.Task<WebApplication1.ServiceReference1.gettestdata> GetInfoAsync();
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/Update", ReplyAction="http://tempuri.org/IService1/UpdateResponse")]
-        string Update(WebApplication1.ServiceReference1.InsertUser.UpdateUser u);
+        string Update(WebApplication1.ServiceReference1.UpdateUser u);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/Update", ReplyAction="http://tempuri.org/IService1/UpdateResponse")]
-        System.Threading.Tasks.Task<string> UpdateAsync(WebApplication1.ServiceReference1.InsertUser.UpdateUser u);
+        System.Threading.Tasks.Task<string> UpdateAsync(WebApplication1.ServiceReference1.UpdateUser u);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/Delete", ReplyAction="http://tempuri.org/IService1/DeleteResponse")]
-        string Delete(WebApplication1.ServiceReference1.InsertUser.DeleteUser d);
+        string Delete(WebApplication1.ServiceReference1.DeleteUser d);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/Delete", ReplyAction="http://tempuri.org/IService1/DeleteResponse")]
-        System.Threading.Tasks.Task<string> DeleteAsync(WebApplication1.ServiceReference1.InsertUser.DeleteUser d);
+        System.Threading.Tasks.Task<string> DeleteAsync(WebApplication1.ServiceReference1.DeleteUser d);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -311,19 +313,19 @@ namespace WebApplication1.ServiceReference1 {
             return base.Channel.GetInfoAsync();
         }
         
-        public string Update(WebApplication1.ServiceReference1.InsertUser.UpdateUser u) {
+        public string Update(WebApplication1.ServiceReference1.UpdateUser u) {
             return base.Channel.Update(u);
         }
         
-        public System.Threading.Tasks.Task<string> UpdateAsync(WebApplication1.ServiceReference1.InsertUser.UpdateUser u) {
+        public System.Threading.Tasks.Task<string> UpdateAsync(WebApplication1.ServiceReference1.UpdateUser u) {
             return base.Channel.UpdateAsync(u);
         }
         
-        public string Delete(WebApplication1.ServiceReference1.InsertUser.DeleteUser d) {
+        public string Delete(WebApplication1.ServiceReference1.DeleteUser d) {
             return base.Channel.Delete(d);
         }
         
-        public System.Threading.Tasks.Task<string> DeleteAsync(WebApplication1.ServiceReference1.InsertUser.DeleteUser d) {
+        public System.Threading.Tasks.Task<string> DeleteAsync(WebApplication1.ServiceReference1.DeleteUser d) {
             return base.Channel.DeleteAsync(d);
         }
     }
